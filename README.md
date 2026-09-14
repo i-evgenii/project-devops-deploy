@@ -1,4 +1,4 @@
-[![CI](https://github.com/i-evgenii/project-devops-deploy/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/i-evgenii/project-devops-deploy/actions/workflows/ci.yml)
+[![.github/workflows/ci.yml](https://github.com/i-evgenii/project-devops-deploy/actions/workflows/ci.yml/badge.svg)](https://github.com/i-evgenii/project-devops-deploy/actions/workflows/ci.yml)
 
 # Project DevOps Deploy
 
