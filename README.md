@@ -1,3 +1,5 @@
+[![CI](https://github.com/i-evgenii/project-devops-deploy/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/i-evgenii/project-devops-deploy/actions/workflows/ci.yml)
+
 # Project DevOps Deploy
 
 Bulletin board service.
@@ -197,3 +199,26 @@ Override the host/port with `MANAGEMENT_SERVER_PORT` if you changed it; no Prome
     - Image shows up in bulletin show view (URL should either point to CDN or be a presigned S3 link).
     - Object exists in S3 bucket (check via AWS console or `aws s3 ls s3://your-bucket/bulletins/...`).
 5. Optional: run `curl -I "$(curl -s .../api/files/view?key=... | jq -r .url)"` to ensure the presigned URL is valid from the production environment.
+
+
+# Docker commands
+
+### Build image
+```
+make docker-build IMAGE_TAG=v1.0.0
+```
+
+### Run image
+```
+make docker-run
+```
+
+### Push image to ghcr.io
+```
+make docker-push
+```
+
+### Check url
+```
+http://localhost:8080/swagger-ui/index.html
+```
