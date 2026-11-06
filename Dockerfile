@@ -15,6 +15,8 @@ RUN ./gradlew build -x test --no-daemon
 
 FROM eclipse-temurin:25-jre-alpine
 
+RUN apk add --no-cache curl
+
 WORKDIR /app
 
 RUN addgroup -S app && adduser -S app -G app
